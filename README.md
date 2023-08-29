@@ -1,57 +1,34 @@
 # payment-project
-# Payment-Application-
-This project is built under supervision of EgFWD program.
-___
-# Project description
-This project is payment order application. It is a simulation for the mini pay device that we're all use for paying in shops. 
-Software is designed to be modular, reliable, maintainable and reusable.
-## Project Software Architecture
 
-## Folder Structure
-Folder structure:
-```
-└───PaymentApplication
-│   └───Card
-│       └─── card.h
-│       └─── card.c
-│   └───Terminal
-│       └─── terminal.h
-│       └─── terminal.c
-│   └───Server
-│       └─── server.h
-│       └─── server.c
-│   └───Application
-│       └─── application.h
-│       └─── application.c
-│   └───main.c
-│   └───PaymentApplication.exe
-```
-## Modules
-Card module: The module used to handle the card informations.  
+# Payment-Application
+C project in Embedded Systems Professional Track provided by `Udacity` and `egfwd`. The project is developed using `Microsoft Visual Studio`.
 
-Terminal module: The module used to handle the real time input payment data.  
+## System Description
+-Payment systems are now available everywhere and everyone interacts with these systems every day.
 
-Server module: The module used to process the payment transaction.  
+-I implemented the SALE transaction only by simulating the card, terminal(ATM), and server using the `C programming language`.
 
-Application module: The module used to handle the modules and make them work together.  
+-Card Module is responsible for storing the card data which is Card Holder Name, Primary Account Number, and Card Expiry Date.
 
-Project is built with error handling that can help the user/developer to maintin and develop the program.
+-Terminal (ATM) Module is responsible for user interfacing. The module stores the transaction date and checks whether the card is expired or valid. Also, it stores the transaction amount and checks if it exceeds the max limit allowed for the ATM.
 
-## How to use
-To edit and compile in this project run this command in the project folder
-```
-gcc Card/card.c Terminal/terminal.c Server/server.c Application/application main.c -o App.exe
-```
-That's it. Enjoy the testing & learning.  
+-Server Module is responsible for authentication and account verification. It checks if the account is found within the server database if the account state whether running or blocked and if the account has a sufficient amount to withdraw or not.
 
-It is easy ro run and test the project. All you have to do is to write
-```c
-int main(void)
-{
-  appStart();
-}
-```
-and the whole project will run automatically.
+![Screenshot 2022-11-04 210823](https://user-images.githubusercontent.com/70335125/200056073-aca21402-c805-488b-91a7-20d8cb3f3099.png)
 
 
+## System Constraints
+### Card Module 
+-Card Holder Name must be 20 characters  minimum  and 24 characters maximum .
+
+-Card Expiry Date must be in form MM/YY.
+
+-Primary Account Number must be 16 characters minimum and 19 characters maximum.
+
+### Terminal Module
+-Transaction Date must be in form DD/MM/YYYY.
+
+-Transaction Amount must be a positive non-zero value.
+
+-Terminal Max Amount must be set as an initialization for the Terminal.
 
