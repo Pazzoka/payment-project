@@ -1,0 +1,4 @@
+D:\courses\embedded\payment project\tgroba\tgroba payment\Debug\tgroba payment.exe
+D:\courses\embedded\payment project\tgroba\tgroba payment\Debug\tgroba payment.pdb
+D:\courses\embedded\payment project\tgroba\payment\Debug\tgroba payment.exe
+D:\courses\embedded\payment project\tgroba\payment\Debug\tgroba payment.pdb
