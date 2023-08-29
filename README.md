@@ -6,7 +6,7 @@ ___
 This project is payment order application. It is a simulation for the mini pay device that we're all use for paying in shops. 
 Software is designed to be modular, reliable, maintainable and reusable.
 ## Project Software Architecture
-![PA_SWA](https://g.top4top.io/p_2475nj5yb1.png)
+
 ## Folder Structure
 Folder structure:
 ```
@@ -53,10 +53,5 @@ int main(void)
 ```
 and the whole project will run automatically.
 
-## Future plans
-Add more features and automate test cases.  
-Add cmake file to make it easy to build & run.
-___
-# Credits  
-The credits back to the EgFWD Embedded Systems Professional Track powered by itida.  
-And specially thanks to [Eng Yehia M.Abu Eita]()
+
+
